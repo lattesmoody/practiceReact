@@ -20,16 +20,18 @@
 // }
 // logActivity();
 
-const lordify = function(firstname){
-  return `전설의 ${firstname}`;
+var lordify = function(firstName, land){
+  return `${land}의 ${firstName}`;
 }
-console.log( lordify("펭귄토끼"));
+
+var lordify2= (firstName,land) => `${land}의 ${firstName}`;
+
+console.log(lordify("hello", "브리즈번"));
+console.log(lordify("오정원", "시드니"));
+
 function App() {
   
 }
-
-const lordify2 = firstname => `캔터베리의 ${firstname}`;
-console.log(lordify2("펭귄토끼친구"));
 export default App;
 
 //useEffect =>특정 코드의 실행을 제한한다.
