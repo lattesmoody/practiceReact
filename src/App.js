@@ -19,17 +19,19 @@
 //   console.log(`${p.name.first}은(는) ${p.favActivity}를 좋아합니다.`);
 // }
 // logActivity();
+const sandwich = {
+  bread: "더치 크런치",
+  meat: "참치",
+  cheese: "스위스",
+  toppings: ["상추", "토마토", "머스타트"]
+};
 
-var gangwon= {
-  resorts: ["용평", "평창", "강촌", "강릉", "홍천"],
-  print: function(Delay = 1000){
-    setTimeout(() =>{
-      console.log(this.resorts.join(","));
-    },Delay);
-  }
-}
+let {bread, meat} = sandwich;
+bread = "마늘";
+meat = "칠면조";
 
-gangwon.print()
+console.log(bread,meat);
+console.log(sandwich.bread, sandwich.meat);
 
 function App() {
   
