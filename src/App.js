@@ -19,19 +19,20 @@
 //   console.log(`${p.name.first}은(는) ${p.favActivity}를 좋아합니다.`);
 // }
 // logActivity();
-const sandwich = {
-  bread: "더치 크런치",
-  meat: "참치",
-  cheese: "스위스",
-  toppings: ["상추", "토마토", "머스타트"]
+const lordify = ({spouse:{firstname}}) => {
+  console.log(`켄터베리의 ${firstname}`)
 };
 
-let {bread, meat} = sandwich;
-bread = "마늘";
-meat = "칠면조";
+const regularPerson={
+  firstname: "현석",
+  lastname: "오",
+  spouse: {
+    firstname:"펭귄!",
+    lastname: "토끼"
+  }
+};
 
-console.log(bread,meat);
-console.log(sandwich.bread, sandwich.meat);
+lordify(regularPerson);
 
 function App() {
   
