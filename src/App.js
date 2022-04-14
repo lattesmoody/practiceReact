@@ -20,10 +20,16 @@
 // }
 // logActivity();
 
-
+const lordify = function(firstname){
+  return `전설의 ${firstname}`;
+}
+console.log( lordify("펭귄토끼"));
 function App() {
   
 }
+
+const lordify2 = firstname => `캔터베리의 ${firstname}`;
+console.log(lordify2("펭귄토끼친구"));
 export default App;
 
 //useEffect =>특정 코드의 실행을 제한한다.
