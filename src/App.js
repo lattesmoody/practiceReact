@@ -1,13 +1,11 @@
-const name = "탈락";
-const elevation = 9738;
-const print = function(){
-  console.log(`${this.name} 산의 높이는 ${this.elevation} 피트입니다.`)
-};
+const peaks = ["대청봉", "중청봉", "소청봉"];
+const canyons = ["천불동계곡", "가야동계곡"];
+const seoraksan = [...peaks, ...canyons];
 
-const funHike = {name, elevation,print};
+console.log(seoraksan.join(', '));
 
-funHike.print();
-
+const  [last] = peaks.reverse();
+console.log(last);
 function App() {
   
 }
