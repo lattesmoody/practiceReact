@@ -1,6 +1,12 @@
-//const [firstAnimal] = ["캥거루", "웜뱃", "코알라"];
-const [,,thirdAnimal] = ["캥거루", "웜뱃", "코알라"];
-console.log(thirdAnimal);
+const name = "탈락";
+const elevation = 9738;
+const print = function(){
+  console.log(`${this.name} 산의 높이는 ${this.elevation} 피트입니다.`)
+};
+
+const funHike = {name, elevation,print};
+
+funHike.print();
 
 function App() {
   
