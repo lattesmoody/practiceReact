@@ -20,14 +20,16 @@
 // }
 // logActivity();
 
-var lordify = function(firstName, land){
-  return `${land}의 ${firstName}`;
+var gangwon= {
+  resorts: ["용평", "평창", "강촌", "강릉", "홍천"],
+  print: function(Delay = 1000){
+    setTimeout(() =>{
+      console.log(this.resorts.join(","));
+    },Delay);
+  }
 }
 
-var lordify2= (firstName,land) => `${land}의 ${firstName}`;
-
-console.log(lordify("hello", "브리즈번"));
-console.log(lordify("오정원", "시드니"));
+gangwon.print()
 
 function App() {
   
